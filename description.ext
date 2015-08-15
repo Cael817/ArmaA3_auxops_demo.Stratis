@@ -1,0 +1,45 @@
+class Header
+{
+ gameType = Coop;
+ minPlayers = 1;
+ maxPlayers = 30;
+};
+
+respawn="BASE";
+respawndelay = 10;
+Briefing = 1;
+debriefing = 1;
+saving = 0;
+disabledAI = 0;
+enableDebugConsole = 1;
+
+showCompass = 1;
+showMap = 1;
+showGPS = 0;
+showWatch = 1;
+showPad = 1;
+showRadio = 1;
+
+author = "Cael817";
+onLoadName = "auxops demo";
+loadScreen = "";
+onLoadMission = "auxops demo with GID V1.31";
+overviewText = "auxops demo with GID V1.31";
+overviewPicture = "";
+
+// delete the following line when the lxOPS is no more used
+#include "LxOPS\lxOPS_dlg.hpp"
+
+//Cael817, Non vanilla stuff
+#include "addons\auxops\common\auxops_common.hpp"
+#include "addons\auxops\common\progress\auxops_dlg_progress.hpp"
+#include "addons\auxops\common\keypad\auxops_dlg_keypad.hpp"
+#include "addons\auxops\vos\auxops_vos_dlg_ownerMenu.hpp"
+#include "addons\auxops\vos\auxops_vos_dlg_userMenu.hpp"
+#include "addons\auxops\bos\auxops_bos_dlg_ownerMenu.hpp"
+#include "addons\auxops\bos\auxops_bos_dlg_userMenu.hpp"
+
+class RscTitles {
+	#include "addons\auxops\common\progress\auxops_dlg_progress.hpp"
+};
+//Cael817, End
